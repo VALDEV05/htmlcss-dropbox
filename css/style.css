@@ -51,8 +51,11 @@ body{
 .debug .section{
     height: 300px;
 } */
-.debug .section_partner{
+/* .debug .section_partner{
     height: 500px;
+} */
+.debug .card_operation{
+    height: 100px;
 }
 /*****************
 *     utility     * 
@@ -303,11 +306,15 @@ body{
     background-color: #4d8df5;
 }
 /* section partner */
+.container_main .section_partner{
+    padding-bottom: 120px;
+}
 .section_partner .partner_image{
     float: left;
     background-image: url(../img/partner.png);
     height: 450px;
-    width: 50%;
+    width: 49%;
+    margin-left: 1%;
     background-size: cover;
 }
 .section_partner .partner_text{
@@ -341,4 +348,48 @@ body{
 .btn_partner a:hover{
     text-decoration: underline;
     cursor: pointer;
+}
+/* section operation */
+.container_main .title_operation{
+    font-weight: 800;
+    font-size: 25px;
+}
+.card_container .card_operation{
+    float: left;
+    margin: 1.5%;
+    width: 30%;
+}
+.card_operation .image_operation img{
+    width: 100%;
+    height: 200px;
+
+}
+.card_operation .title_operation_card{
+    font-weight: 700;
+    font-size: 23px;
+    padding-top: 25px;
+
+}
+.card_operation .subtitle_operation{
+    font-size: 13px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+.underline{
+    text-decoration: underline;
+}
+.section_operation .bottom_operation .title_bottom{
+    font-weight: 800;
+    font-size: 35px;
+    padding-bottom: 50px;
+}
+p.client a{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 50px;
+
+}
+p.client a:hover{
+    color: #0061FF;
+    text-decoration: underline;
 }
