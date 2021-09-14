@@ -8,6 +8,9 @@
     clear: both;
     display: table;
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 /*****************
 *   debug rules  * 
 *****************/
@@ -17,20 +20,106 @@
 }
 .debug #site_nav{
     height: 78px;
-    background-color: rgb(234, 0, 255);
 }
+.debug .jumbo_section{
+    height: 1000px;
+    background-color: blueviolet;
+    width: 100%;
+}
+.debug .content_jumbo{
+    height: 100%;
+    background-color: rgb(234, 0, 255);
+    width: 100%;
+    
+}
+.debug .text_jumbo{
+    height: 100%;
+    background-color: rgb(27, 4, 29);
+    color: rgb(234, 0, 255);
+    
+}
+/*****************
+*     utility     * 
+*****************/
+.btn a{
+    background-color: #0061FF;
+    color: white;
+    padding: .50rem 1rem;
+    text-decoration: none;    
+}
+.menu li{
+    list-style: none;
+    display: inline;
+    padding: 0 25px;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+}
+/*****************
+*     header     * 
+*****************/
+/* navbar */
 #site_nav{
+    height: 78px;
+    background-color:  white;
     width: 100%;
     position: fixed;
     top:0;
     left: 0;
-}
-nav #left_nav,
-nav #right_nav{
-    height: 100%;
-    background-color: #fff;
-    float: left;
-    width: 48%;
-    margin: 0 1%;
+    z-index: 100;
 }
 
+/* left_nav */
+#site_nav .logo img{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+#site_nav .menu_left {
+    position: absolute;
+    top: 30px;
+    left: 170px;       
+}
+#site_nav .menu_right{
+    position: absolute;
+    top: 30px;
+    right: 170px;
+}
+#site_nav .btn_login{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: burlywood
+}
+
+/* jumbo_section */
+.text_jumbo{
+    width: 80%;
+    padding: 130px 80px 0 80px;
+    margin: auto;
+}
+.text_jumbo .title_jumbo{
+    font-size: 58px;
+}
+.text_jumbo .subtitle_jumbo{
+    padding: 40px 0;
+    width: 40%;
+    font-size: 17px;
+}
+.text_jumbo .description_jumbo{
+    padding-top: 15px;
+}
+.text_jumbo .arrow_jumbo{
+    padding-top: 20px;
+    font-size: 30px;
+}
+.text_jumbo .image_jumbo{
+    height: 476px;
+    width: 801px;
+    position: absolute;
+    top: 300px;
+    right: 50px;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+}
