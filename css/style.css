@@ -9,7 +9,7 @@
     display: table;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans',sans-serif;
 }
 /*****************
 *   debug rules  * 
@@ -92,33 +92,42 @@ body{
     right: 30px;
     background-color: burlywood
 }
+#site_nav .menu li a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 /* jumbo_section */
+.content_jumbo{
+    background-color: #B4D0E7;
+}
 .text_jumbo{
     width: 80%;
-    padding: 130px 80px 0 80px;
+    padding: 200px 80px 0 80px;
     margin: auto;
 }
 .text_jumbo .title_jumbo{
     font-size: 58px;
+    font-weight: 700;
 }
 .text_jumbo .subtitle_jumbo{
-    padding: 40px 0;
+    padding: 60px 0;
     width: 40%;
     font-size: 17px;
 }
 .text_jumbo .description_jumbo{
-    padding-top: 15px;
+    padding-top: 30px;
 }
 .text_jumbo .arrow_jumbo{
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 90px;
     font-size: 30px;
 }
 .text_jumbo .image_jumbo{
     height: 476px;
     width: 801px;
     position: absolute;
-    top: 300px;
+    top: 420px;
     right: 50px;
     background-image: url(../img/jumbo.png);
     background-size: cover;
