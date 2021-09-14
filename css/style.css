@@ -45,11 +45,14 @@ body{
 .debug .card{
     height: 700px;
 } */
-.debug .card_large{
+/* .debug .card_large{
     height: 400px;
 }
 .debug .section{
     height: 300px;
+} */
+.debug .section_partner{
+    height: 500px;
 }
 /*****************
 *     utility     * 
@@ -126,7 +129,7 @@ body{
 }
 .text_jumbo{
     width: 80%;
-    padding: 200px 80px 0 80px;
+    padding: 130px 80px 0 80px;
     margin: auto;
 }
 .text_jumbo .title_jumbo{
@@ -150,7 +153,7 @@ body{
     height: 476px;
     width: 801px;
     position: absolute;
-    top: 420px;
+    top: 355px;
     right: 50px;
     background-image: url(../img/jumbo.png);
     background-size: cover;
@@ -293,4 +296,49 @@ body{
     color: white;
     padding: 7px 60px;
     font-size: 18px;
+}
+.btn_contact a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: #4d8df5;
+}
+/* section partner */
+.section_partner .partner_image{
+    float: left;
+    background-image: url(../img/partner.png);
+    height: 450px;
+    width: 50%;
+    background-size: cover;
+}
+.section_partner .partner_text{
+    float: left;
+    height: 100%;
+    width: 46%;
+    margin-left: 4%;
+    padding-top: 40px;
+}
+.partner_text .partner_title{
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 30px;
+    line-height: 35px;
+}
+.partner_text .partner_subtitle{
+    padding-bottom: 20px;
+    font-size: 15px;
+    line-height: 25px;
+}
+.partner_text .btn_partner{
+    padding-top: 20px;
+}
+.btn_partner a{
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    padding: 7px 45px;
+    font-size: 18px;
+}
+.btn_partner a:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
