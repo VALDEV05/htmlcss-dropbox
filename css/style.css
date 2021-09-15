@@ -69,6 +69,12 @@ html{
 .debug .container_answer_question{
     height: 730px;
 }
+.debug #site_footer{
+    height: 500px;
+}
+.debug .content_footer{
+    height: 100%;
+}
 /*****************
 *     utility     * 
 *****************/
@@ -541,11 +547,78 @@ p.client a:hover{
 .container_answer_question .row_question{
     line-height: 100px;
     vertical-align: middle;
+    position: relative;
+}
+.row_question .question{
+    float: left;
 }
 .row_question .question_down{
     float: right;
     padding-right: 40px;
 }
-.row_question .question{
+.answer p{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    visibility: hidden;
+    height: 50px;
+}
+.row_question .question_down:hover{
+    transform: rotateX(180deg);
+
+}
+/*****************
+*     /main      * 
+*****************/
+/*****************
+*     footer     * 
+*****************/
+#site_footer{
+    width: 100%;
+    background-color: black;
+    position: relative;
+    top: 241px;
+}
+.content_footer{
+    width: 80%;
+    margin-left: 10%;
+}
+.content_footer .col_footer{
     float: left;
+    width: 20%;
+    height: 100%;
+    border: 1px solid black;
+    padding-left: 10px;
+    color: white;
+}
+.col_footer .title_col_footer{
+    font-size: 20px;
+    padding-top: 100px;
+    padding-bottom: 27px;
+    font-weight: 700;
+}
+.list_footer{
+    list-style: none;
+    padding-bottom: 114px;
+}
+.list_footer a{
+    color: white;
+    text-decoration: none;
+}
+.col_footer .space {
+    height: 1px;
+    width: 110px;
+    border: .5px solid #D0D0D3;
+    margin: 0px 0 49px 0px;
+}
+.language .text{
+    display: inline-block;
+}
+.language .triangle_down i{
+    padding-bottom: 7px;
+    font-size: 18px;
+    transform: rotateX(180deg);
+}
+.last{
+    padding-bottom: 45px;
 }
