@@ -57,8 +57,11 @@ body{
 /* .debug .card_operation{
     height: 100px;
 } */
-.debug .container_secondary{
+/* .debug .container_secondary{
     height: 700px;
+} */
+.debug .container_large{
+    height: 500px;
 }
 /*****************
 *     utility     * 
@@ -476,4 +479,36 @@ p.client a:hover{
 .section_right .square.square.low_dx{
     background-color:#FFD830;
     
+}
+/* container_large */
+#site_main .container_large{
+    position: relative;
+    top: 189px;
+    background-color: #B4D0E7;
+}
+.container_large .text_container_large{
+    width: 73%;
+    margin: auto;
+    padding-left: 27px;
+}
+.container_large .text_container_large h1{
+    padding: 140px 0;
+    color: #640F32;
+    font-weight: 700;
+    display: inline-block;
+    
+}
+.btn_container_large a{
+    text-decoration: none;
+    background-color: white;
+    padding: 10px 64px;
+    color: black;
+}
+.btn_container_large{
+    float: right;
+    padding: 150px 20px 0 30px;
+}
+.btn_container_large a:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
