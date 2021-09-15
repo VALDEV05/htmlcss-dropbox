@@ -54,15 +54,18 @@ body{
 /* .debug .section_partner{
     height: 500px;
 } */
-.debug .card_operation{
+/* .debug .card_operation{
     height: 100px;
+} */
+.debug .container_secondary{
+    height: 700px;
 }
 /*****************
 *     utility     * 
 *****************/
 .container_main{
     position: relative;
-    top: 192px;
+    top: 150px;
 }
 .btn a{
     background-color: #0061FF;
@@ -392,4 +395,85 @@ p.client a{
 p.client a:hover{
     color: #0061FF;
     text-decoration: underline;
+}
+/* section sponsor */
+#site_main .container_secondary{
+    position: relative;
+    top: 190px;
+    left: 0px;
+    width: 100%;
+}
+.container_secondary .section_left,
+.container_secondary .section_right{
+    width: 27%;
+    float: left;
+}
+.container_secondary .section_center{
+    width: 46%;
+    float: left;
+}
+.section_left .square,
+.section_right .square{
+    float: left;
+    line-height: 194.39px;
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+}
+.section_left .square img,
+.section_right .square img{
+    width: 105px;
+}
+.section_center .logo img{
+    width: 137px;
+    height: auto;
+    padding: 50px 0 37px 0px;
+}
+.section_center{
+    padding-left: 50px; 
+}
+.section_center .text_center{
+    width: 90%;
+    font-size: 16px;
+}
+.section_center .text_center .main_text{
+    padding-bottom: 55px;
+}
+.section_center .text_center .submain_text{
+    padding-bottom: 67px;
+}
+
+/* background color */
+/* section_left */
+.section_left .square.up_sx{
+    background-color: #A2D39B;  
+}
+.section_left .square.up_dx{
+    background-color: #61082B;
+}
+.section_left .square.low_sx{
+    background-color: #FF1C1C;
+}
+.section_left .square.low_dx{
+    background-color: #0093CE;
+}
+/* center */
+.section_center{
+    background-color: #F5F5F5;
+}
+/* section_right */
+.section_right .square.square.up_sx{
+    background-color: #D5001F;
+}
+.section_right .square.square.up_dx{
+    background-color:#B4D0E7;
+    
+}
+.section_right .square.square.low_sx{
+    background-color:#0D2481;
+    
+}
+.section_right .square.square.low_dx{
+    background-color:#FFD830;
+    
 }
