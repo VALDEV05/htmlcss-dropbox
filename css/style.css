@@ -140,11 +140,19 @@ html{
     right: 30px;
     background-color: burlywood
 }
+#site_nav .menu_left ul li{
+    height: 78px;
+}
 #site_nav .menu li a:hover{
     cursor: pointer;
-    text-decoration: underline;
+    border-bottom: 3px solid black;
 }
-
+li.dropdown-item {
+    display: block;
+}
+ul.container_dropdown{
+    display: none;
+}
 /* jumbo_section */
 .content_jumbo{
     background-color: #B4D0E7;
