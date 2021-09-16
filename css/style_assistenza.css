@@ -1,0 +1,93 @@
+/***************
+* Common Rules * 
+ **************/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+body{
+    min-width: 1440px;
+    font-family: 'Open Sans',sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.list_none li{
+    list-style: none;
+    display: inline;
+}
+
+/***************
+* Debug Rules * 
+ **************/
+ .debug .navbar_header{
+    height: 200px;
+ }
+ .navbar_header{
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+ }
+ .navbar_top .logo_navbar_top{
+    height: 100px;
+    line-height: 100px;
+    float: left;
+ }
+.navbar_top .logo_navbar_top img{
+    width: 250px;
+    padding-left: 40px;
+    vertical-align: middle;
+ }
+ nav.navbar_top{
+    border-bottom: 1px solid rgb(121, 118, 118);
+}
+ nav.navbar_bottom{
+    border-bottom: 1px solid rgb(121, 118, 118);
+}
+ .menu_navbar{
+     display: inline-block;
+ }
+ .navbar_top .menu_navbar{
+    float: right;
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+ }
+ .navbar_top .menu_navbar{
+    float: right;
+ }
+.navbar_bottom .menu_navbar{
+    width: 100%;
+    text-align: center;
+ }
+ .navbar_bottom .menu_navbar li{
+    padding: 0px 45px;
+    font-size: 20px;
+ }
+.navbar_bottom .menu_navbar .item_menu a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+ .menu_navbar .item_menu a{
+    text-decoration: none;
+    color: rgb(121, 118, 118);
+}
+ .menu_navbar .item_menu{
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 0 20px;
+    display: inline-block;
+}
+.menu_navbar .item_menu:hover a{
+    color: black;
+    text-decoration: underline;
+}

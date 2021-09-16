@@ -169,19 +169,22 @@ html{
 }
 .dropdown{
     position: absolute;
-    top: 90px;
-    left: -45px;
-    background-color: #5aa2dd;
+    top: 78px;
+    left: -90px;
+    background-color: #e7e1d7;
     width: 200px;
     display: none;
-    border-radius: 20px;
     text-align: center;
+}
+.dropdown_container:hover{
+    background-color:#e7e1d7 ;
 }
 .dropdown_container:hover .dropdown{
     display: inline-block;
-}
+    background-color:#e7e1d7 ;
+} 
 .dropdown_item a:hover{
-    border-bottom: 2px solid black;
+    background-color:rgb(241, 238, 232);
 }
 /* jumbo_section */
 .content_jumbo{
