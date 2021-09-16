@@ -128,14 +128,18 @@ html{
     line-height: 80px;
     float: left;
     vertical-align: middle;
+    padding-top: 6px;
 }
 .content_navbar .menu_left{
     line-height: 100%;
     float: left;
+    padding-left: 30px;
 }
 .content_navbar .menu_right{
     line-height: 100%;
     float: right;
+    padding-right: 30px;
+
 }
 
 .menu_left .item_menu,
@@ -179,59 +183,6 @@ html{
 .dropdown_item a:hover{
     border-bottom: 2px solid black;
 }
-/* #site_nav{
-    height: 78px;
-    background-color:  white;
-    width: 100%;
-    position: fixed;
-    top:0;
-    left: 0;
-    z-index: 100;
-}
-*/
-/* left_nav */
-/* #site_nav .logo img{
-    position: absolute;
-    top: 25px;
-    left: 20px;
-}
-#site_nav .menu_left {
-    position: absolute;
-    top: 30px;
-    left: 170px;       
-}
-#site_nav .menu_right{
-    position: absolute;
-    top: 30px;
-    right: 170px;
-}
-#site_nav .btn_login{
-    position: absolute;
-    top: 30px;
-    right: 30px;
-}
-#site_nav .menu li a:hover{
-    cursor: pointer;
-    border-bottom: 3px solid black;
-}
-li.dropdown_item {
-    display: block;
-    width: 250px;
-    padding: 10px 20px;
-}
-ul.container_dropdown{
-    position: relative;
-}
-ul.dropdown{
-    background-color: #F5F5F5;
-    display: none;
-    position: absolute;
-    top: 35px;
-    left: 0;
-}
-.container_dropdown:hover .dropdown{
-    display: block;
-} */
 /* jumbo_section */
 .content_jumbo{
     background-color: #B4D0E7;
@@ -666,15 +617,27 @@ p.client a:hover{
     padding-right: 40px;
 }
 .answer p{
+    color: #5aa2dd;
+    margin-top: 20px;
+    padding-bottom: 125px;
+    display: none;
     position: absolute;
-    top: 0px;
+    top: 57px;
     left: 0px;
-    visibility: hidden;
+    line-height: 100%;
+    vertical-align: middle;
     height: 50px;
+    background-color: white;
+    z-index: 1;
 }
-.row_question .question_down:hover{
+.row_question:hover .question_down{
     transform: rotateX(180deg);
-
+}
+.row_question:hover .container_answer_question {
+    line-height: 300px;
+}
+.row_question:hover .answer p{
+    display: block;
 }
 /*****************
 *     /main      * 
@@ -687,6 +650,7 @@ p.client a:hover{
     background-color: black;
     position: relative;
     top: 241px;
+    z-index: 2;
 }
 .content_footer{
     width: 80%;
