@@ -29,6 +29,9 @@ html{
  .debug .navbar_header{
     height: 200px;
  }
+ .debug .section_second_main{
+    height: 1000px;
+ }
  /***************
  *    HEADER    * 
  **************/
@@ -169,7 +172,7 @@ nav.navbar_bottom{
     width: 40%;
 }
 /* main */
-.content_main{
+.section_first_main{
     width: 80%;
     margin: auto;
     position: relative;
@@ -294,11 +297,28 @@ nav.navbar_bottom{
 .row_question:hover .col_60 {
     line-height: 300px;
 }
-
-
-
-
-
+/* /section_first_main */
+/* section_second_main */
+.section_second_main{
+    position: relative;
+    top: 60px;
+}
+.col_50{
+    width: 45%;
+    height: 100%;
+}
+.sx{
+    margin-left: 4%;
+    margin-right: 1%;
+    float: left;
+    background-color: aqua;
+}
+.dx{
+    margin-right: 4%;
+    margin-left: 1%;
+    float: left;
+    background-color: rgb(43, 80, 80);
+}
 
 
 
