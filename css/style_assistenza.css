@@ -114,26 +114,27 @@ nav.navbar_bottom{
 }
 .dropdown{
     position: absolute;
-    top: 101px;
+    top: 99px;
     width: 100vw;
     display: none;
     text-align: center;
     background-color: white;
+    border-bottom: 1px solid rgb(121, 118, 118);
 }
 .dropdown.account_fatturazione{
-    left: -8px;
+    left: -53px;
 }
 .dropdown.crea_elimina_account{
-    left: -282px;
+    left: -313px;
 }
 .dropdown.team_amministratori{
-    left: -567px;
+    left: -575px;
 }
 .dropdown.installazioni_integrazioni{
-    left: -844px;
+    left: -835px;
 }
 .dropdown.fondamenti_dropbox{
-    left: -1154px;
+    left: -1121px;
     text-align: right;
     padding-right: 40px;
 }
@@ -175,11 +176,11 @@ nav.navbar_bottom{
     top: 100px;
 }
 .col_60{
-    padding-top: 40px;
+    padding-top: 30px;
     float: left;
-    width: 60%;
+    width: 50%;
     height: 100%;
-
+    padding-left: 30px;
 }
 .col_40{
     padding-top: 40px;
@@ -193,8 +194,16 @@ nav.navbar_bottom{
     width: 95%;
     margin: auto;
     border: 1px solid wheat;
-    border-top: 5px solid rgb(255, 166, 0);
     margin-bottom: 40px;
+}
+.card.border_orange{
+    border-top: 6px solid #F2AE34;
+}
+.card.border_blue{
+    border-top: 6px solid #ABC9E2;
+}
+.card.border_pink{
+    border-top: 6px solid #FEA69A;
 }
 .card .col_icon{
     height: 100%;
@@ -220,7 +229,7 @@ nav.navbar_bottom{
 }
 .col_text h1{
     text-align: left;
-    font-size: 19px;
+    font-size: 18px;
     padding: 15px 0 0 30px;
 }
 .col_text h2{
@@ -247,7 +256,7 @@ nav.navbar_bottom{
     padding: 0 0 30px 0;
 }
 .col_60 .row_question{
-    padding-top: 10px;
+    padding-top: 14px;
     line-height: 90px;
     vertical-align: middle;
     position: relative;
@@ -255,7 +264,7 @@ nav.navbar_bottom{
 .row_question .question{
     float: left;
     width: 54%;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 41px;
 }
 .row_question .question_right{
