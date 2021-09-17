@@ -29,6 +29,10 @@ html{
  .debug .navbar_header{
     height: 200px;
  }
+ /***************
+ *    HEADER    * 
+ **************/
+ /* NAVBAR */
  .navbar_header{
     width: 100%;
     background-color: #ffffff;
@@ -36,6 +40,35 @@ html{
     top: 0;
     left: 0;
  }
+.menu_navbar{
+    display: inline-block;
+}
+.menu_navbar .item_menu a{
+    text-decoration: none;
+    color: rgb(121, 118, 118);
+}
+.menu_navbar .item_menu{
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 0 20px;
+    display: inline-block;
+    }
+.navbar_top .menu_navbar .item_menu:hover a,
+.navbar_bottom .menu_navbar .item_menu:hover a{
+    color: black;
+    text-decoration: underline;
+}
+.menu_navbar .item_menu.page_corrente{
+    color: rgb(121, 118, 118);
+    text-decoration: underline;
+}
+.menu_navbar .item_menu.item_menu.page_corrente:hover a{
+    color: rgb(182, 162, 162);
+    text-decoration: underline;
+}
+
+ /* NAVBAR_TOP */
  .navbar_top .logo_navbar_top{
     height: 100px;
     line-height: 100px;
@@ -48,46 +81,110 @@ html{
  }
  nav.navbar_top{
     border-bottom: 1px solid rgb(121, 118, 118);
-}
- nav.navbar_bottom{
-    border-bottom: 1px solid rgb(121, 118, 118);
-}
- .menu_navbar{
-     display: inline-block;
- }
- .navbar_top .menu_navbar{
+    }
+.navbar_top .menu_navbar{
     float: right;
     height: 100px;
     line-height: 100px;
     vertical-align: middle;
- }
- .navbar_top .menu_navbar{
+    }
+.navbar_top .menu_navbar{
     float: right;
- }
+    }
+    /* NAVBAR_BOTTOM */
+nav.navbar_bottom{
+    border-bottom: 1px solid rgb(121, 118, 118);
+}
 .navbar_bottom .menu_navbar{
     width: 100%;
     text-align: center;
  }
  .navbar_bottom .menu_navbar li{
-    padding: 0px 45px;
-    font-size: 20px;
+    padding: 0px 38px;
+    font-size: 17px;
  }
 .navbar_bottom .menu_navbar .item_menu a{
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
- .menu_navbar .item_menu a{
-    text-decoration: none;
-    color: rgb(121, 118, 118);
+/* DROPDOWN NAVBAR_BOTTOM */
+.dropdown_container{
+    position: relative;
 }
- .menu_navbar .item_menu{
-    height: 100px;
-    line-height: 100px;
-    vertical-align: middle;
-    padding: 0 20px;
+.dropdown{
+    position: absolute;
+    top: 101px;
+    width: 100vw;
+    display: none;
+    text-align: center;
+    background-color: white;
+}
+.dropdown.account_fatturazione{
+    left: -8px;
+}
+.dropdown.crea_elimina_account{
+    left: -282px;
+}
+.dropdown.team_amministratori{
+    left: -567px;
+}
+.dropdown.installazioni_integrazioni{
+    left: -844px;
+}
+.dropdown.fondamenti_dropbox{
+    left: -1154px;
+    text-align: right;
+    padding-right: 40px;
+}
+.dropdown_container .dropdown li.dropdown_item {
+    padding: 0 7px;
+    font-size: 15px;
+    width: 20%;
+}
+.dropdown li a{
     display: inline-block;
 }
-.menu_navbar .item_menu:hover a{
-    color: black;
-    text-decoration: underline;
+.dropdown_container:hover .dropdown{
+    display: inline-block;
+} 
+/* hero_image */
+.content_header{
+    background-color: khaki;
+    padding-top: 200px;
+}
+.hero_image{
+    float: right;
+    background-size: cover;
+    width: 55%;
+    height: 570px;
+    background-image: url(../img/unified_home_hero_desktop.webp);
+}
+.hero_text{
+    float: left;
+    position: relative;
+}
+.hero_text h1{
+    float: left;
+    width: 19%;
+    font-size: 70px;
+    padding: 109px 0 0 179px;
+}
+.hero_form {
+    width: 45%;
+    background-color: white;
+    float: left;
+    margin: 407px 0 0 0px;
+    padding: 10px 80px;
+}
+.hero_form p,
+.hero_form div{
+    display: inline-block;
+}
+.hero_form p{
+    padding-right: 100px;
+}
+.hero_form div{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
