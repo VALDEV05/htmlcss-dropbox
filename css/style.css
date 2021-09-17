@@ -288,9 +288,9 @@ html{
     text-decoration:  none;
     color: white;
     background-color: #0061FF;
-    padding: 8px 20px;
+    padding: 8px 35px;
     margin: 20px;
-    font-size: 15px;
+    font-size: 12.5px;
 }
 .description_plan .btn_trial a:hover{
     background-color: #4d8df5;
@@ -395,7 +395,7 @@ html{
     line-height: 35px;
 }
 .partner_text .partner_subtitle{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-size: 15px;
     line-height: 25px;
 }
@@ -406,7 +406,7 @@ html{
     border: 1px solid black;
     text-decoration: none;
     color: black;
-    padding: 7px 45px;
+    padding: 7px 25px;
     font-size: 18px;
 }
 .btn_partner a:hover{
@@ -415,8 +415,8 @@ html{
 }
 /* section operation */
 .container_main .title_operation{
-    font-weight: 800;
-    font-size: 25px;
+    font-weight: 700;
+    font-size: 32px;
 }
 .card_container .card_operation{
     float: left;
@@ -568,7 +568,7 @@ p.client a:hover{
 /* container_large */
 #site_main .container_large{
     position: relative;
-    top: 189px;
+    top: 188px;
     background-color: #B4D0E7;
 }
 .container_large .text_container_large{
@@ -620,7 +620,7 @@ p.client a:hover{
     padding-right: 40px;
 }
 .answer p{
-    color: #5aa2dd;
+    color: #999999;
     margin-top: 20px;
     padding-bottom: 125px;
     display: none;
@@ -684,11 +684,15 @@ p.client a:hover{
 .col_footer .space {
     height: 1px;
     width: 110px;
-    border: .5px solid #D0D0D3;
+    border: .5px solid #999999;
     margin: 0px 0 49px 0px;
+}
+.language{
+    color: #999999;
 }
 .language .text{
     display: inline-block;
+
 }
 .language .triangle_down i{
     padding-bottom: 7px;
