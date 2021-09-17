@@ -39,6 +39,7 @@ html{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 100;
  }
 .menu_navbar{
     display: inline-block;
@@ -151,40 +152,219 @@ nav.navbar_bottom{
 .content_header{
     background-color: khaki;
     padding-top: 200px;
+    width: 100vw;
+    
 }
-.hero_image{
-    float: right;
-    background-size: cover;
-    width: 55%;
+.content_header > img{
     height: 570px;
-    background-image: url(../img/unified_home_hero_desktop.webp);
+    text-align: left;
+    height: 570px;
+    float: right
 }
 .hero_text{
+    height: 570px;
+    background-color: violet;
     float: left;
+    width: 40%;
+}
+/* main */
+.content_main{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 100px;
+}
+.col_60{
+    padding-top: 40px;
+    float: left;
+    width: 60%;
+    height: 100%;
+
+}
+.col_40{
+    padding-top: 40px;
+    float: left;
+    width: 40%;
+    height: 100%;
+    background-color: white;
+}
+.col_40 .card{
+    height: 265px;
+    width: 95%;
+    margin: auto;
+    border: 1px solid wheat;
+    border-top: 5px solid rgb(255, 166, 0);
+    margin-bottom: 40px;
+}
+.card .col_icon{
+    height: 100%;
+    float: left;
+    width: 20%;
+    border-right: 1px solid wheat;
+    text-align: center;
+}
+.card .col_text{
+    height: 100%;
+    float: left;
+    width: 80%;
+    text-align: center;
+}
+.card .col_icon i{
+    color: #01a2ff;
+    transform: scale(3.5);
+    transform: scaleX(10px);
+    padding-top: 15px;   
+}
+.col_text{
+    padding-left: 30px;
+}
+.col_text h1{
+    text-align: left;
+    font-size: 19px;
+    padding: 15px 0 0 30px;
+}
+.col_text h2{
+    text-align: left;
+    font-weight: lighter;
+    color: black;
+    font-size: 15px;
+    padding: 10px 30px 0 30px;
+}
+.col_text .space{
+    height: 1px;
+    width: 57px;
+    border: .5px solid #D0D0D3;
+    margin: 30px 0 30px 30px;
+}
+.col_text p{
+    text-align: left;
+    font-weight: lighter;
+    color: #6D7B8D;
+    font-size: 15px;
+    padding: 0 30px 0 30px;
+}
+.col_60 h1{
+    padding: 0 0 30px 0;
+}
+.col_60 .row_question{
+    padding-top: 10px;
+    line-height: 90px;
+    vertical-align: middle;
     position: relative;
 }
-.hero_text h1{
+.row_question .question{
     float: left;
-    width: 19%;
-    font-size: 70px;
-    padding: 109px 0 0 179px;
+    width: 54%;
+    font-size: 20px;
+    line-height: 41px;
 }
-.hero_form {
-    width: 45%;
-    background-color: white;
+.row_question .question_right{
+    float: right;
+    width: 10%;
+    padding-right: 40px;
+}
+.row_question span{
+    padding: 10px 0;
     float: left;
-    margin: 407px 0 0 0px;
-    padding: 10px 80px;
 }
-.hero_form p,
-.hero_form div{
+.row_question span p{
+    margin: 0 0 0 25px;
+    line-height: 70px;
+    padding: 0 10px;
+    border: 1px solid black;
+}
+.row_question:hover .question{
+    text-decoration: underline;
+}
+.row_question:hover .question_right{
+    transform: translateX(-10px);
+}
+.row_question:hover .rec{
+    text-decoration: underline;
+}
+.row_question:hover .col_60 {
+    line-height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+#site_footer{
+    width: 100%;
+    background-color: black;
+    position: relative;
+    top: 241px;
+    z-index: 2;
+}
+.content_footer{
+    width: 80%;
+    margin-left: 10%;
+}
+.content_footer .col_footer{
+    float: left;
+    width: 20%;
+    height: 100%;
+    border: 1px solid black;
+    padding-left: 10px;
+    color: white;
+}
+.col_footer .title_col_footer{
+    font-size: 20px;
+    padding-top: 100px;
+    padding-bottom: 27px;
+    font-weight: 700;
+}
+.list_footer{
+    list-style: none;
+    padding-bottom: 114px;
+}
+.list_footer a{
+    color: white;
+    text-decoration: none;
+}
+.col_footer .space {
+    height: 1px;
+    width: 110px;
+    border: .5px solid #D0D0D3;
+    margin: 0px 0 49px 0px;
+}
+.language .text{
     display: inline-block;
 }
-.hero_form p{
-    padding-right: 100px;
+.language .triangle_down i{
+    padding-bottom: 7px;
+    font-size: 18px;
+    transform: rotateX(180deg);
 }
-.hero_form div{
-    position: absolute;
-    top: 0;
-    left: 0;
+.last{
+    padding-bottom: 45px;
 }
